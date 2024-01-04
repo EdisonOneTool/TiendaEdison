@@ -21,6 +21,8 @@ body {
 
 .header-title {
     flex-grow: 1;
+    display: flex;
+    align-items: center;
 }
 
 .header-title h1 {
@@ -28,8 +30,8 @@ body {
 }
 
 .header-image img {
-    max-height: 40px;
-    max-width: 40px;
+    max-height: 100%;
+    max-width: 40px; /* Ajusta según sea necesario */
 }
 
 nav {
