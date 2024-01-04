@@ -32,6 +32,7 @@ body {
 .header-image img {
     max-height: 150px; /* Ajusta según sea necesario */
     outline: none;
+    border: none;
 }
 
 nav {
