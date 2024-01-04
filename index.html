@@ -8,43 +8,28 @@
 </head>
 <body>
 
-    <!-- Barra de Navegación -->
-    <nav>
-        <div class="navbar-content">
-            <div class="navbar-title">
+    <!-- Logo y Título Arriba de la Barra de Navegación -->
+    <div class="header">
+        <div class="header-content">
+            <div class="header-title">
                 <h1>Tienda Edison</h1>
             </div>
-            <div class="navbar-image">
-                <img src="https://media.licdn.com/dms/image/C4D0BAQGhhhiWxK07XA/company-logo_200_200/0/1631363490004?e=2147483647&v=beta&t=pLbXFvBcZU6QfUtStgdyh0sH-i_y1MbvkgKYxeY3xmc" alt="Logo de Tienda Edison">
+            <div class="header-image">
+                <img src="tu-imagen.png" alt="Logo de Tienda Edison">
             </div>
-            <ul>
-                <li><a href="#home" onclick="mostrarSeccion('home')">Home</a></li>
-                <li><a href="#productos" onclick="mostrarSeccion('productos')">Productos</a></li>
-                <li><a href="#carrito" onclick="mostrarSeccion('carrito')">Carrito</a></li>
-            </ul>
         </div>
+    </div>
+
+    <!-- Barra de Navegación -->
+    <nav>
+        <ul>
+            <li><a href="#home" onclick="mostrarSeccion('home')">Home</a></li>
+            <li><a href="#productos" onclick="mostrarSeccion('productos')">Productos</a></li>
+            <li><a href="#carrito" onclick="mostrarSeccion('carrito')">Carrito</a></li>
+        </ul>
     </nav>
 
-    <!-- Sección Home -->
-    <section id="home">
-        <h1>Bienvenido a Tu Tienda</h1>
-        <p>Contenido específico de la sección Home.</p>
-        <p>Texto adicional para la sección Home.</p>
-    </section>
-
-    <!-- Sección Productos -->
-    <section id="productos">
-        <h2>Nuestros Productos</h2>
-        <p>Contenido específico de la sección Productos.</p>
-        <p>Aquí puedes mostrar detalles sobre los productos disponibles.</p>
-    </section>
-
-    <!-- Sección Carrito -->
-    <section id="carrito">
-        <h2>Tu Carrito de Compras</h2>
-        <p>Contenido específico de la sección Carrito.</p>
-        <p>Puedes mostrar aquí los productos agregados al carrito.</p>
-    </section>
+    <!-- Resto del contenido... -->
 
     <script>
         function mostrarSeccion(seccion) {
