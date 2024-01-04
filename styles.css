@@ -21,7 +21,6 @@ body {
 
 .header-title {
     flex-grow: 1;
-    text-align: center;
 }
 
 .header-title h1 {
@@ -76,6 +75,13 @@ section {
     background-color: #e6e6e6;
 }
 
+#carrito {
+    background-color: #cccccc;
+}
+
+section:target {
+    display: block;
+}
 #carrito {
     background-color: #cccccc;
 }
