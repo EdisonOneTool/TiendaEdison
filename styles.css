@@ -101,6 +101,6 @@ section:target {
     border: 1px solid #ddd;
 }
 #PerfilEdison img {
-    /* Estilos para el elemento de producto adicional */
-    max-height: 400px; /* Ajusta según sea necesario */
+    max-width: 100%; /* Ajusta el tamaño de la imagen al ancho del contenedor */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
 }
