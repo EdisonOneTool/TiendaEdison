@@ -31,7 +31,7 @@ body {
 
 .header-image img {
     max-height: 100%;
-    max-width: 80px; /* Ajusta según sea necesario */
+    max-width: 200px; /* Ajusta según sea necesario */
 }
 
 nav {
