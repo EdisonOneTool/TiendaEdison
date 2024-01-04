@@ -4,25 +4,31 @@ body {
     padding: 0;
 }
 
-nav {
+.header {
     background-color: #333;
-}
-
-.navbar-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    color: white;
     padding: 10px;
 }
 
-.navbar-title h1 {
-    color: white;
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-title h1 {
     margin: 0;
 }
 
-.navbar-image img {
+.header-image img {
     max-height: 40px;
     max-width: 40px;
+}
+
+nav {
+    background-color: #333;
 }
 
 ul {
