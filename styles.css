@@ -13,7 +13,7 @@ body {
 
 .header-content {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Cambio a dirección de columna para apilar los elementos verticalmente */
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -30,8 +30,7 @@ body {
 }
 
 .header-image img {
-    max-height: 100%;
-    max-width: 200px; /* Ajusta según sea necesario */
+    max-height: 150px; /* Ajusta según sea necesario */
 }
 
 nav {
