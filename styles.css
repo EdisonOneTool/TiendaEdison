@@ -94,3 +94,9 @@ section:target {
 #carrito {
     background-color: #cccccc;
 }
+#EncuestaPulgares {
+    /* Estilos para el elemento de producto adicional */
+    background-color: #f8f8f8;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
