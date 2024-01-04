@@ -35,6 +35,14 @@ body {
 
 nav {
     background-color: #333;
+    text-align: center; /* Añadido para centrar los elementos */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 ul {
@@ -45,7 +53,7 @@ ul {
 }
 
 li {
-    float: left;
+    display: inline-block; /* Cambiado a inline-block para centrar los elementos */
 }
 
 a {
