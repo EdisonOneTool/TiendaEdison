@@ -1,1 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+#home {
+    background-color: #f2f2f2;
+}
+
+#productos {
+    background-color: #e6e6e6;
+}
+
+#carrito {
+    background-color: #cccccc;
+}
