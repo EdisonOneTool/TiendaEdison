@@ -11,9 +11,9 @@
     <!-- Barra de Navegación -->
     <nav>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#productos">Productos</a></li>
-            <li><a href="#carrito">Carrito</a></li>
+            <li><a href="#home" onclick="mostrarSeccion('home')">Home</a></li>
+            <li><a href="#productos" onclick="mostrarSeccion('productos')">Productos</a></li>
+            <li><a href="#carrito" onclick="mostrarSeccion('carrito')">Carrito</a></li>
         </ul>
     </nav>
 
@@ -37,6 +37,18 @@
         <p>Contenido específico de la sección Carrito.</p>
         <p>Puedes mostrar aquí los productos agregados al carrito.</p>
     </section>
+
+    <script>
+        function mostrarSeccion(seccion) {
+            // Oculta todas las secciones
+            document.getElementById('home').style.display = 'none';
+            document.getElementById('productos').style.display = 'none';
+            document.getElementById('carrito').style.display = 'none';
+
+            // Muestra la sección seleccionada
+            document.getElementById(seccion).style.display = 'block';
+        }
+    </script>
 
 </body>
 </html>
