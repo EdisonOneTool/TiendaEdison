@@ -33,6 +33,7 @@ a:hover {
 }
 
 section {
+    display: none;  /* Esta línea se ha agregado para ocultar todas las secciones inicialmente */
     padding: 40px;
     text-align: center;
 }
