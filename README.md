@@ -1,2 +1,2 @@
 # test_interceptos
-Texto de prueba
+<p>Texto de prueba.</p>
