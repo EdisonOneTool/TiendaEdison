@@ -8,6 +8,23 @@ nav {
     background-color: #333;
 }
 
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar-title h1 {
+    color: white;
+    margin: 0;
+}
+
+.navbar-image img {
+    max-height: 40px;
+    max-width: 40px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -25,6 +42,7 @@ a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 a:hover {
@@ -33,7 +51,7 @@ a:hover {
 }
 
 section {
-    display: none;  /* Esta línea se ha agregado para ocultar todas las secciones inicialmente */
+    display: none;
     padding: 40px;
     text-align: center;
 }
