@@ -112,31 +112,3 @@ section:target {
     height: auto; /* Permite que la altura se ajuste automáticamente */
 }
 
-/* Estilo del pop-up */
-.pop-up {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    z-index: 1;
-}
-
-.pop-up-contenido {
-    text-align: center;
-}
-
-.cerrar {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.cerrar:hover {
-    color: black;
-}
