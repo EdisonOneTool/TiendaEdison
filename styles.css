@@ -56,13 +56,6 @@ ul {
     overflow: hidden;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
 li {
     display: inline-block; /* Cambiado a inline-block para centrar los elementos */
 }
@@ -102,16 +95,48 @@ section {
 section:target {
     display: block;
 }
+
 #carrito {
     background-color: #cccccc;
 }
+
 #EncuestaPulgares {
     /* Estilos para el elemento de producto adicional */
     background-color: #f8f8f8;
     padding: 10px;
     border: 1px solid #ddd;
 }
+
 #PerfilEdison img {
     max-width: 800px; /* Ajusta el tamaño de la imagen al ancho del contenedor */
     height: auto; /* Permite que la altura se ajuste automáticamente */
+}
+
+/* Estilo del pop-up */
+.pop-up {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.pop-up-contenido {
+    text-align: center;
+}
+
+.cerrar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cerrar:hover {
+    color: black;
 }
