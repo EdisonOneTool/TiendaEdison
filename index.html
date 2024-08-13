@@ -104,15 +104,8 @@ try{(new g(100,"r","QSI_S_ZN_8vNDdnlk4F3XGaa","https://zn8vnddnlk4f3xgaa-edisons
 
     <script>
         function mostrarSeccion(seccion) {
-            // Oculta todas las secciones
-            document.getElementById('home').style.display = 'none';
-            document.getElementById('productos').style.display = 'none';
-            document.getElementById('carrito').style.display = 'none';
-
-            // Muestra la sección seleccionada
-            document.getElementById(seccion).style.display = 'block';
-            
-            // Realiza un refresh de la página
+            // Redirige a la sección seleccionada y luego recarga la página
+            window.location.href = '#' + seccion;
             location.reload();
         }
     </script>
