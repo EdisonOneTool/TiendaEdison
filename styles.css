@@ -122,7 +122,7 @@ section:target {
 .producto img {
     width: 300px;  /* Ancho fijo */
     height: 200px; /* Alto fijo */
-    object-fit: cover; /* Ajusta la imagen para llenar el área sin distorsionar */
+    object-fit: contain; /* Ajusta la imagen para llenar el área sin distorsionar */
     border-radius: 5px; /* Opcional: agrega bordes redondeados */
 }
 
