@@ -120,8 +120,10 @@ section:target {
 }
 
 .producto img {
-    max-width: 100%;
-    height: auto;
+    width: 300px;  /* Ancho fijo */
+    height: 200px; /* Alto fijo */
+    object-fit: cover; /* Ajusta la imagen para llenar el área sin distorsionar */
+    border-radius: 5px; /* Opcional: agrega bordes redondeados */
 }
 
 .producto .descripcion {
