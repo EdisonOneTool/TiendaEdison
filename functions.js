@@ -15,12 +15,11 @@ document.querySelectorAll('.producto').forEach(item => {
         var description = "Aquí puedes agregar una descripción detallada del producto " + title + ".";
         var imageSrc = this.querySelector('img').src;
         
-        // Configura el contenido del modal
+        // Set modal content
         document.getElementById('modal-title').textContent = title;
         document.getElementById('modal-description').textContent = description;
         document.getElementById('modal-image').src = imageSrc;
         
-        // Muestra el modal
         modal.style.display = "block";
     });
 });
