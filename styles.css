@@ -146,3 +146,41 @@ section:target {
     border: 1px dashed #ccc;
     background-color: #f9f9f9;
 }
+
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Posicionamiento fijo */
+    z-index: 1; /* Asegura que el modal esté encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ocupa toda la pantalla */
+    height: 100%;
+    overflow: auto; /* Permite desplazamiento si el contenido es demasiado grande */
+    background-color: rgba(0,0,0,0.4); /* Fondo semitransparente */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centrado verticalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ancho del contenido del modal */
+    max-width: 500px; /* Máximo ancho del modal */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra alrededor del modal */
+    position: relative; /* Posiciona relativamente respecto al modal */
+    z-index: 2; /* Asegura que el contenido del modal esté encima del fondo */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
