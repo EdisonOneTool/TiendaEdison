@@ -73,9 +73,8 @@ try{(new g(100,"r","QSI_S_ZN_8vNDdnlk4F3XGaa","https://zn8vnddnlk4f3xgaa-edisons
             <div class="producto">
                 <img src="https://github.com/EdisonOneTool/TiendaEdison/raw/main/imagenes/Cibertruck.png" alt="Cibertruck">
                 <div class="descripcion">
-                    <p>Tesla <span id="producto">Cybertruck</span></p>
+                    <p>Tesla Cybertruck</p>
                 </div>
-
                 <div class="detalles" id="Cibertruck"></div>
             </div>
             <div class="producto">
@@ -103,14 +102,16 @@ try{(new g(100,"r","QSI_S_ZN_8vNDdnlk4F3XGaa","https://zn8vnddnlk4f3xgaa-edisons
         <div id="EncuestaPulgares">
         </div>
     </section>
-
-    <script>
-        function mostrarSeccion(seccion) {
-            // Redirige a la sección seleccionada y luego recarga la página
-            window.location.href = '#' + seccion;
-            location.reload();
-        }
-    </script>
     
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+        <img id="modal-image" src="" alt="" style="width:100%; height:auto;">
+    </div>
+    </div>
+    <script src="functions.js"></script>
 </body>
 </html>
