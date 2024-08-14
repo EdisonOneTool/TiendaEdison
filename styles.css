@@ -149,7 +149,8 @@ section:target {
 
 .modal {
     display: none; 
-    position: fixed; 
+    position: fixed;
+    border-radius: 8px; 
     z-index: 1; 
     left: 0;
     top: 0;
@@ -161,16 +162,33 @@ section:target {
 
 .modal-content {
     background-color: #fefefe;
-    margin: 5% auto; /* Centra verticalmente el modal */
+    margin: 5% auto; 
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Ancho del modal */
-    max-width: 600px; /* Ancho máximo del modal */
-    max-height: 80vh; /* Altura máxima del modal (80% de la altura de la ventana) */
-    overflow-y: auto; /* Permite el desplazamiento vertical dentro del modal */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra para el modal */
+    width: 80%; 
+    max-width: 600px; 
+    max-height: 80vh; 
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     position: relative; 
     z-index: 2; 
+}
+
+.modal-content img {
+    max-width: 100%; 
+    height: auto;
+    margin-bottom: 20px; 
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.modal-content p {
+    font-size: 16px;
 }
 
 .close {
