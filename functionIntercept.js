@@ -12,4 +12,6 @@ function interceptoConExtRef() {
           externalReference: 152
         };
     }
+
+    QSI.API.run();
 }
