@@ -11,7 +11,12 @@ function interceptoConExtRef() {
         QSI.config = {
           externalReference: 152
         };
+        console.log("cargado extRef")
     }
 
-    QSI.API.run();
+    if (hasInterceptLoaded) {
+        console.log("evaluando scripts")
+        QSI.API.run();
+        console.log("script evaluado")
+    } 
 }
