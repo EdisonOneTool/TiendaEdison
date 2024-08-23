@@ -11,3 +11,5 @@ function preIntercept() {
         console.log("cargado extRef")
     }
 }
+
+preIntercept()
