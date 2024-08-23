@@ -9,7 +9,21 @@
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
-    <script src="preIntercept.js"></script>
+    <!-- <script src="preIntercept.js"></script> -->
+
+    <script type="text/javascript">
+        console.log("preIntercept antes de evaluar")
+        if(typeof QSI === "undefined") {
+            userId = "152"
+            console.log("preIntercept evaluando")
+            console.log(userId)
+            QSI = {};
+            QSI.config = {
+            externalReference: userId
+            };
+            console.log("cargado extRef")
+        }
+    </script>
     
     <!--BEGIN QUALTRICS WEBSITE FEEDBACK SNIPPET-->
  
