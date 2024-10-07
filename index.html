@@ -19,7 +19,7 @@
             console.log(userId)
             QSI = {};
             QSI.config = {
-            externalReference: userId
+                externalReference: userId
             };
             console.log("cargado extRef")
         }
@@ -73,9 +73,10 @@
     <!-- Barra de Navegación -->
     <nav>
         <ul>
-            <li><a href="#home" onclick="interceptoConExtRef()">Home</a></li> <!-- <a href="#home" onclick="mostrarSeccion('home')">Home</a> -->
+            <li><a href="#home" onclick="mostrarSeccion('home')">Home</a></li>
             <li><a href="#productos" onclick="mostrarSeccion('productos')">Productos</a></li>
             <li><a href="#carrito" onclick="mostrarSeccion('carrito')">Carrito</a></li>
+            <li><a href="#dispararIntercepto" onclick="interceptoConExtRef()">Disparar intercepto</a></li>
         </ul>
     </nav>
 
