@@ -1,17 +1,21 @@
 function interceptoConExtRef() {
-    if (QSI.API) {
-        hasInterceptLoaded=true;
-      } else {
-        hasInterceptLoaded=false;
-      }
-    console.log(hasInterceptLoaded)
+  if (QSI.API) {
+      hasInterceptLoaded=true;
+    } else {
+      hasInterceptLoaded=false;
+    }
+  console.log("Se cargo el intercepto: " + hasInterceptLoaded)
+}
 
-    if (hasInterceptLoaded) {
-        console.log("evaluando scripts")
-        // QSI.API.run();
-        QSI.API.run('SI_6YDe0e3j19MQXz0', {}, {
-          "ApellidoNombre9": "Medvdev"  // Dato embebido que será enviado a Qualtrics
-        });
-        console.log("script evaluado")
-    } 
+function evaluarIntercepto() {
+  if (hasInterceptLoaded) {
+    console.log("Intercepto cargado. Evaluando scripts")
+    var embebidoVariable = 'medvedev';
+    QSI.API.run('SI_9vlIooAOHnLQGnc', {}, {
+      "ApellidoNombre9": embebidoVariable  // Dato embebido que será enviado a Qualtrics
+    });
+    console.log("Script evaluado. data embebida enviada: " + embebidoVariable)
+  } else {
+    console.log("No esta cargado el intercepto")
+  }
 }
