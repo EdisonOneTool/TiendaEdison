@@ -9,11 +9,10 @@ function interceptoConExtRef() {
 
 function evaluarIntercepto() {
   if (hasInterceptLoaded) {
-    console.log("Intercepto cargado. Evaluando scripts")
+    var interceptId = 'SI_9vlIooAOHnLQGnc'
+    console.log("Intercepto cargado. Evaluando script: " + interceptId)
     var embebidoVariable = 'medvedev';
-    QSI.API.run('SI_9vlIooAOHnLQGnc', {}, {
-      "ApellidoNombre9": embebidoVariable  // Dato embebido que será enviado a Qualtrics
-    });
+    QSI.API.run(interceptId, {})
     console.log("Script evaluado. data embebida enviada: " + embebidoVariable)
   } else {
     console.log("No esta cargado el intercepto")
