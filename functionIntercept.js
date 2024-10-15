@@ -12,8 +12,8 @@ function evaluarIntercepto() {
     var interceptId = 'SI_d5pdlVu5JyIGGjQ'
     console.log("Intercepto cargado. Evaluando script: " + interceptId)
     var embebidoVariable = 'HolaMundo';
-    QSI.API.run(interceptId, {})
-    // QSI.API.run(interceptId, {}, { "ApellidoNombre9": embebidoVariable });
+    // QSI.API.run(interceptId, {})
+    QSI.API.run(interceptId, {}, { "ApellidoNombre9": embebidoVariable });
     console.log("Script evaluado. data embebida enviada: " + embebidoVariable)
   } else {
     console.log("No esta cargado el intercepto")
