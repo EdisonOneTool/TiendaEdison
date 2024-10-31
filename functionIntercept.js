@@ -9,12 +9,12 @@ function interceptoConExtRef() {
 
 function evaluarIntercepto() {
   if (hasInterceptLoaded) {
-    var interceptId = 'SI_d5pdlVu5JyIGGjQ'
+    var interceptId = 'SI_3lS8euQf7702kZ0' // SI_d5pdlVu5JyIGGjQ
     console.log("Intercepto cargado. Evaluando script: " + interceptId)
     var embebidoVariable = 'HolaMundo';
-    // QSI.API.run(interceptId, {})
-    QSI.API.run(interceptId, {}, { "ApellidoNombre9": embebidoVariable });
-    console.log("Script evaluado. data embebida enviada: " + embebidoVariable)
+    QSI.API.run(interceptId, {})
+    // QSI.API.run(interceptId, {}, { "ApellidoNombre9": embebidoVariable });
+    // console.log("Script evaluado. data embebida enviada: " + embebidoVariable)
   } else {
     console.log("No esta cargado el intercepto")
   }
