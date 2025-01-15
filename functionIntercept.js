@@ -19,7 +19,7 @@ function evaluarIntercepto() {
 
     // var idCliente = '1234';
 
-    QSI.API.run()
+    QSI.API.run();
     // QSI.API.run(interceptId, {})
     // QSI.API.run(interceptId, {}, { "embebidoEnvio": idCliente });
 
