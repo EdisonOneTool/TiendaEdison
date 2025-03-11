@@ -25,6 +25,8 @@ function evaluarIntercepto() {
 
 
     // console.log("Script evaluado. data embebida enviada: " + idCliente)
+
+    console.log("Script evaluado")
   } else {
     console.log("No esta cargado el intercepto")
   }
